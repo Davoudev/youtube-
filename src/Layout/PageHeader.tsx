@@ -5,7 +5,7 @@ import { useState } from "react";
 export const PageHeader = () => {
   const [fullwidthSearch, setFullwidthSearch] = useState(false);
   return (
-    <div className="flex justify-between w-full pt-2.5 gap-10">
+    <div className="flex justify-between w-full pt-2.5 gap-10 px-4">
       {/* reuseabe component */}
       <FirstHeaderPageSection hidden={fullwidthSearch} />
       <form
