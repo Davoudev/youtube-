@@ -1,6 +1,7 @@
 import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from "lucide-react";
 import { Button } from "../components/Button";
 import { useState } from "react";
+import { useSidebarContext } from "../context/sidebarContext";
 
 export const PageHeader = () => {
   const [fullwidthSearch, setFullwidthSearch] = useState(false);
@@ -75,12 +76,13 @@ type firstHeaderPageSectionProps = {
   hidden?: boolean;
 };
 export const FirstHeaderPageSection = ({
-  hidden,
+  hidden = false,
 }: firstHeaderPageSectionProps) => {
+  const { toggle } = useSidebarContext();
+
   return (
     <div className={`${hidden ? "hidden" : "flex"}`}>
-      {/* i have to add a toggle action */}
-      <Button variant={"dark"} size={"icon"}>
+      <Button variant={"dark"} size={"icon"} onClick={toggle}>
         <Menu />
       </Button>
       <a href="/">

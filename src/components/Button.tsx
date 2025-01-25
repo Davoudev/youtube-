@@ -11,7 +11,7 @@ export const buttonStyles = cva(["transition-colors"], {
       lightDark: ["bg-dark-50", "hover:bg-dark-200"],
     },
     size: {
-      default: ["   rounded", "p-2"],
+      default: ["rounded", "p-2"],
       icon: [
         "rounded-full",
         "w-10",
