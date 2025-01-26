@@ -86,7 +86,7 @@ export const FirstHeaderPageSection = ({
         <Menu />
       </Button>
       <a href="/">
-        <img src={"../src/assets/logo.png"} alt="logo" className="h-10 w-10" />
+        <img src="/images/logo.png" className="h-10 w-10" />
       </a>
     </div>
   );

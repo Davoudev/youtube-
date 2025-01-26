@@ -14,7 +14,7 @@ const App = () => {
         <PageHeader />
         <div className="grid grid-cols-[auto,1fr] flex-grow overflow-auto">
           <Sidebar />
-          <div className="overflow-x-hidden px-8">
+          <div className="overflow-x-hidden px-8 ">
             <div className="sticky top-0 z-10">
               <CategoryPills
                 categories={categories}

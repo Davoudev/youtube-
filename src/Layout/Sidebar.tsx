@@ -285,7 +285,7 @@ const LargeSidebarItem = memo(
       )}
     >
       {typeof IconOrImgUrl === "string" ? (
-        <img src={IconOrImgUrl} className="w-6 h-6" alt={title} />
+        <img src={IconOrImgUrl} className="w-6 h-6 rounded-full" alt={title} />
       ) : (
         <IconOrImgUrl />
       )}
