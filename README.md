@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# 🎬 YouTube UI Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A 🎨 modern and stylish YouTube-inspired front-end project. This app provides a rich user experience with interactive media, smooth scrolling, and a clean, responsive design.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔄 **Smooth Horizontal & Vertical Scrolling** – Professional scrolling for seamless content browsing.
+- 🎥 **Video Playback on Hover** – Preview videos by simply hovering over thumbnails.
+- 🌐 **API Integration** – Dynamically fetches video data via API.
+- 🧼 **Modern & Clean UI** – Beautiful layout with elegant design and responsiveness.
+- 🧭 **Advanced Sidebar** – Dual-mode sidebar (expanded and collapsed) with professional behavior.
+- 📌 **Stylish Navbar** – Intuitive and minimal top navigation bar.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- ⚛️ **React**
+- 🎨 **CSS / Tailwind CSS / Styled Components**
+- 🔗 **RESTful APIs** _(or YouTube Data API / custom API)_
+- 💡 **JavaScript / TypeScript** _(if applicable)_
 
-- Configure the top-level `parserOptions` property like this:
+## 🖼️ Screenshots
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+![main page](<./public/images/Screenshot (196).png>)
+
+## 📁 Project Structure
+
+```bash
+/ (root)
+├── components/       # Reusable UI components
+├── pages/            # Application pages (Next.js)
+├── public/           # Static assets
+├── styles/           # CSS or styling files
+└── ...
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## ⚙️ Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. 📦 Clone the repository:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/Davoudev/youtube-clone.git
+   cd youtube-clone
+   ```
+
+2. 📥 Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. ▶️ Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 🙌 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## 📬 Contact
+
+If you have any questions or suggestions, feel free to reach out!
+
+> Made with ❤️ by [Davoudev](https://github.com/Davoudev)
